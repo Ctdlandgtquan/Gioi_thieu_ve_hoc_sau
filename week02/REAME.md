@@ -54,7 +54,9 @@ np_list_int: [1 2 3 4 5]
 - Kiểu dữ liệu: `numpy.ndarray`
 - Hỗ trợ chuyển đổi kiểu dữ liệu với `.astype()`
 
-### Indexing và Slicing
+### Indexing và Slicing và các cách tìm phần tử trong mảng
+
+
 ```python
 # Tạo mảng 1D
 x = np.array([1, 2, 3, 4, 5, 6, 7, 8])
