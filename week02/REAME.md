@@ -147,14 +147,14 @@ def tic_tac_toe():
         
         # Kiểm tra thắng
         if check_winner(board, player):
-            print(f"\n🎉 {'X' if player == 1 else 'O'} thắng!")
+            print(f"\n{'X' if player == 1 else 'O'} thắng!")
             display_board(board)
             return
         
         # Đổi lượt
         player = 0 if player == 1 else 1
     
-    print("\n🤝 Hòa!")
+    print("\n Hòa!")
 
 def display_board(board):
     """Hiển thị bảng"""
@@ -250,7 +250,7 @@ Lượt X:
 Hàng (0-2): 2
 Cột (0-2): 2
 
-🎉 X thắng!
+ X thắng!
  X  O  O 
  _  X  _ 
  _  _  X 
