@@ -207,11 +207,8 @@ Dự đoán:  [7, 2, 1, 0, 4]
 # Phân Loại Chữ Số Viết Tay (MNIST) và Phân Loại Chó Mèo (Cat & Dog)
 
 ## Tổng Quan
-Bài tập về nhà 02 - Xây dựng và so sánh hai mô hình Neural Network:
-1. **MNIST Classification**: Phân loại chữ số viết tay (10 lớp) sử dụng ANN
-2. **Cat & Dog Classification**: Phân loại ảnh chó và mèo (2 lớp) sử dụng CNN
+Bài tập về nhà 02 - Xây dựng và so sánh hai mô hình Neural Network
 
-Chương trình thực hiện đầy đủ các bước từ tải dữ liệu, xây dựng mô hình, huấn luyện và đánh giá độ chính xác cho cả hai bài toán.
 
 ## Công Nghệ Sử Dụng
 **Thư viện chính:**
