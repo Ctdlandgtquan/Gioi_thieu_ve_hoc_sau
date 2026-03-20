@@ -24,7 +24,7 @@ cnn thuần
 deadline 21/3
 
 
-## 🛠️ Công Nghệ Sử Dụng
+## Công Nghệ Sử Dụng
 **Framework & Thư viện chính:**
 - **PyTorch** - Framework deep learning chính
 - **TorchVision** - Xử lý ảnh và augmentation
@@ -34,7 +34,7 @@ deadline 21/3
 - **PIL & OpenCV** - Xử lý ảnh cơ bản
 - **tqdm** - Hiển thị tiến trình huấn luyện
 
-## 📊 Dữ Liệu
+## Dữ Liệu
 **Bộ dữ liệu PlantVillage** gồm ảnh lá cây khỏe mạnh và bị bệnh.
 
 ### Phân Tích Dữ Liệu
@@ -52,7 +52,7 @@ Phân phối dữ liệu:
 - Phân chia train/val: 80% - 20% (16,510 train / 4,128 val)
 - Data augmentation mạnh cho tập train
 
-## 🏗️ Kiến Trúc CNN
+## Kiến Trúc CNN
 
 ### Mô Hình CNN Thuần (Không dùng pretrained)
 ```python
@@ -72,7 +72,7 @@ PlantCNN(
 | Block 4 | Conv(128→256) + Conv(256→256) + Pool | 8x8 | 0.25 |
 | FC Layers | 256*8*8 → 512 → 256 → 15 | - | 0.5 |
 
-## 📈 Kết Quả Huấn Luyện
+## Kết Quả Huấn Luyện
 
 ### Thông Số Huấn Luyện
 - **Batch size:** 32
@@ -90,7 +90,7 @@ Epoch 3: Train Acc: 72.43% | Val Acc: 83.87%
 Epoch 4: Train Acc: 73.68% | Val Acc: 88.15%
 Epoch 5: Train Acc: 74.40% | Val Acc: 89.61%
 Epoch 6: Train Acc: 75.69% | Val Acc: 89.17%
-Epoch 7: Train Acc: 77.42% | Val Acc: 90.29% ✅
+Epoch 7: Train Acc: 77.42% | Val Acc: 90.29% 
 ```
 
 ### Kết Quả Cuối Cùng
@@ -103,7 +103,7 @@ Dừng huấn luyện tại epoch 7 (đạt mục tiêu 90%)
 - **Accuracy:** Tăng đều qua các epoch, không có dấu hiệu overfitting
 - **Loss:** Giảm dần và ổn định
 
-## 🧪 Kỹ Thuật Tránh Overfitting
+## Kỹ Thuật Tránh Overfitting
 1. **Data Augmentation** mạnh:
    - RandomRotation(30°)
    - RandomHorizontalFlip (p=0.5)
@@ -123,10 +123,10 @@ Dừng huấn luyện tại epoch 7 (đạt mục tiêu 90%)
 4. **Cân bằng dữ liệu:**
    - WeightedRandomSampler cho tập train
 
-## 📊 Dự Đoán Mẫu
+## Dự Đoán Mẫu
 Mô hình được thử nghiệm trên 5 ảnh từ tập validation, kết quả dự đoán chính xác với độ tin cậy cao.
 
-## 📝 Kết Luận
+## Kết Luận
 - Mô hình CNN tự xây dựng đạt độ chính xác **90.29%** trên tập validation
 - Các kỹ thuật cân bằng dữ liệu và regularization giúp tránh overfitting
 - Chỉ sau 7 epoch đã đạt được mục tiêu đề ra
